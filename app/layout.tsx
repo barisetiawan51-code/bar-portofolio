@@ -14,9 +14,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Luxury Opulent Tech Portfolio",
+  title: "Bar. Portofolio",
   description:
-    "A high-end, data-driven portfolio with a luxury tech aesthetic.",
+    "Bar. Portofolio",
 };
 
 export default function RootLayout({
