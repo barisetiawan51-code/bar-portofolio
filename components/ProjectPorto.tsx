@@ -52,7 +52,7 @@ export default function SelectedWorks() {
             transition={{ delay: index * 0.1 }}
             viewport={{ once: true }}
             whileHover={{ y: -8 }}
-            className="group relative glass-opulent rounded-[2rem] border border-gold/10 p-10 flex flex-col justify-between overflow-hidden transition-all duration-500 hover:border-gold/30 hover:gold-glow h-full"
+            className="group relative glass-opulent rounded-4xl border border-gold/10 p-10 flex flex-col justify-between overflow-hidden transition-all duration-500 hover:border-gold/30 hover:gold-glow h-full"
           >
             {/* Marble Texture Overlay */}
             <div className="absolute inset-0 opacity-[0.04] pointer-events-none bg-[url('/marble-texture.png')] bg-cover grayscale" />
@@ -67,7 +67,7 @@ export default function SelectedWorks() {
                 </div>
               </div>
 
-              <div className="flex-grow">
+              <div className="grow">
                 <div className="text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-3">
                   {project.focus}
                 </div>

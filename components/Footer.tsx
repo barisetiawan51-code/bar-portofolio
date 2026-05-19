@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-background border-t border-white/5 pt-20 pb-10 relative overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-16">
           {/* Brand & Location */}
           <div className="space-y-4">
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       {/* Final Gold Filigree Line */}
-      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-50" />
+      <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gold to-transparent opacity-50" />
     </footer>
   );
 }
