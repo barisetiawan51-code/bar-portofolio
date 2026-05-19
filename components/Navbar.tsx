@@ -61,8 +61,8 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-10">
+          {/* Desktop & Tablet Links */}
+          <div className="hidden md:flex items-center gap-6 lg:gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -80,8 +80,8 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile/Tablet Contact - Ditambahkan Border & Ukuran Icon Mengecil */}
-          <div className="lg:hidden">
+          {/* Mobile Contact - Ditambahkan Border & Ukuran Icon Mengecil */}
+          <div className="md:hidden">
             <a
               href={`mailto:${CV_DATA.contact.email}`}
               className="flex items-center justify-center w-9 h-9 rounded-full border border-gold/20 glass-opulent text-gold hover:text-white hover:border-gold/50 transition-all active:scale-90"
@@ -92,8 +92,8 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile/Tablet Floating Dock */}
-      <div className="lg:hidden fixed bottom-8 left-0 right-0 z-50 flex justify-center px-6 pointer-events-none">
+      {/* Mobile Floating Dock */}
+      <div className="md:hidden fixed bottom-8 left-0 right-0 z-50 flex justify-center px-6 pointer-events-none">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

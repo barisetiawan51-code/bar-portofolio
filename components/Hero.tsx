@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-10 sm:py-20"
     >
       {/* Animated Mesh Gradient Background */}
       <div className="absolute inset-0 pointer-events-none -z-10">
@@ -32,7 +32,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="flex flex-col items-center text-center max-w-5xl px-6 pt-10">
+      <div className="flex flex-col items-center text-center max-w-5xl px-6 pt-5">
         {/* Name Label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

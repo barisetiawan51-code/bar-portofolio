@@ -14,9 +14,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Luxury Opulent Tech Portfolio",
-  description:
-    "A high-end, data-driven portfolio with a luxury tech aesthetic.",
+  title: "Bar. Portofolio",
+  description: "Portofolio Bar",
 };
 
 export default function RootLayout({
@@ -26,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${outfit.variable} antialiased marble-bg`}>
+      <body
+        className={`${inter.variable} ${outfit.variable} antialiased marble-bg`}
+      >
         <Navbar />
         <div className="relative min-h-screen">
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
         </div>
       </body>
     </html>
