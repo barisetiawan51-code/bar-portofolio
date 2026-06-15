@@ -44,6 +44,7 @@ export const CV_DATA = {
       tech: ["Python", "IBM Granite", "Replicate", "RAG"],
       icon: "Database",
       accent: "bg-sapphire/5",
+      link: "https://github.com/barisetiawan51-code/LLM_IBM_GRANITE_MODEL",
     },
     {
       id: 2,
@@ -58,6 +59,7 @@ export const CV_DATA = {
       tech: ["Python", "XGBoost", "Data Visualization", "Machine Learning"],
       icon: "ShieldAlert",
       accent: "bg-sapphire/5",
+      link: "https://github.com/barisetiawan51-code/FraudDetection-BankJago",
     },
     {
       id: 3,
@@ -72,6 +74,7 @@ export const CV_DATA = {
       tech: ["Python", "Fuzzy Matching", "Data Cleansing"],
       icon: "Link",
       accent: "bg-sapphire/5",
+      link: "https://github.com/barisetiawan51-code/FuzzyMatching-JoinDataset",
     },
     {
       id: 4,
@@ -86,6 +89,7 @@ export const CV_DATA = {
       tech: ["Next.js", "MongoDB", "Tailwind CSS", "Figma"],
       icon: "Terminal",
       accent: "bg-amethyst/5",
+      link: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
     },
   ],
   skills: [

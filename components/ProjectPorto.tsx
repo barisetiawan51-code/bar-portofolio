@@ -45,7 +45,10 @@ export default function SelectedWorks() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
-          <motion.div
+          <motion.a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +107,7 @@ export default function SelectedWorks() {
                 </motion.div>
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </section>
