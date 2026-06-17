@@ -15,6 +15,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Bar. Portofolio",
+  metadataBase: new URL("https://bar-portfolio.js.org"),
 };
 
 export default function RootLayout({
