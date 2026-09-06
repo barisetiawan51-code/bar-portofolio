@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <div className="relative min-h-screen">
           <main>{children}</main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
