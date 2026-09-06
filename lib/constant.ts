@@ -118,7 +118,7 @@ export const CV_DATA = {
       category: "WEB DEVELOPMENT",
       stats: [
         { label: "Frontend", value: "Next.js" },
-        { label: "Backend", value: "Express.js + MongoDB" }
+        { label: "Backend", value: "Express.js" }
       ],
       githubFrontend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
       githubBackend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming-BE",
