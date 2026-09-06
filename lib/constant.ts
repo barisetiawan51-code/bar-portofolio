@@ -123,7 +123,7 @@ export const CV_DATA = {
       githubFrontend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
       githubBackend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming-BE",
       github: "",
-      demo: ""
+      demo: "https://kita-kerja-web-programming.vercel.app/"
     },
     {
       id: 5,
