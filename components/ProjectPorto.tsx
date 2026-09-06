@@ -124,12 +124,12 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
             )}
             {project.githubFrontend && (
               <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> Frontend
+                <FiGithub size={14} /> FE
               </a>
             )}
             {project.githubBackend && (
               <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> Backend
+                <FiGithub size={14} /> BE
               </a>
             )}
             {project.github && !project.githubFrontend && !project.githubBackend && (
