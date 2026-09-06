@@ -28,7 +28,7 @@ const skills = CV_DATA.skills.map((s) => ({
 
 export default function TechnicalArsenal() {
   return (
-    <section id="skills" className="py-4 relative overflow-hidden">
+    <section id="skills" className="py-4 relative overflow-hidden scroll-mt-24">
       {/* Background Plate with Marble Texture */}
       <div className="absolute inset-0 z-0 px-4 md:px-0">
         <div className="w-full h-full glass-opulent rounded-[3rem] border border-gold/10 relative overflow-hidden">

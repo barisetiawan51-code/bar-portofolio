@@ -16,6 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-16">
           {/* Brand & Location */}
           <div className="space-y-4">
+            {/*
             <Link
               href="/"
               className="text-2xl font-bold font-outfit tracking-tighter text-white group"
@@ -25,6 +26,7 @@ export default function Footer() {
                 .
               </span>
             </Link>
+            */}
             <div className="flex items-center gap-2 text-white/40 text-sm font-light">
               <MapPin size={14} className="text-gold/60" />
               <span>{CV_DATA.footer.location}</span>
@@ -73,7 +75,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6 text-[10px] text-white/20 uppercase tracking-widest font-mono">
             <span>Data Science</span>
-            <span>Front-End Dev</span>
+            <span>Full-Stack Developer</span>
           </div>
         </div>
       </div>

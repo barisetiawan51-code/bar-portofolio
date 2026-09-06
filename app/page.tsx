@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Hero />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-20 space-y-24 mb-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20 flex flex-col gap-16 md:gap-24 mb-16 md:mb-24">
         <ProjectPorto />
         <Skills />
         <EducationAwards />

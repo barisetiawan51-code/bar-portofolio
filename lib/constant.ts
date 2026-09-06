@@ -35,7 +35,7 @@ export const CV_DATA = {
       id: 1,
       title: "Insight Cerdas Dunia Kerja",
       focus: "LLM IBM Granite",
-      institution: "Hacktiv8",
+      institution: "HACKTIV8",
       highlights: [
         "Built an LLM with Replicate IBM Granite to classify job openings and summarize descriptions.",
         "Transformed unstructured job opening data into automated insights with 90% accuracy.",
@@ -45,12 +45,20 @@ export const CV_DATA = {
       icon: "Database",
       accent: "bg-sapphire/5",
       link: "https://github.com/barisetiawan51-code/LLM_IBM_GRANITE_MODEL",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
+      category: "AI",
+      stats: [
+        { label: "Accuracy", value: "90%" },
+        { label: "Model", value: "Granite" }
+      ],
+      github: "https://github.com/barisetiawan51-code/LLM_IBM_GRANITE_MODEL",
+      demo: ""
     },
     {
       id: 2,
       title: "Fraud Detection System",
       focus: "Debit Card Fraud Detection",
-      institution: "Bank Jago",
+      institution: "BANK JAGO",
       highlights: [
         "Built a classification model using XGBoost with 99.96% accuracy and 94.9% precision.",
         "Analyzed customer patterns through data visualization to detect fraudulent transactions.",
@@ -60,12 +68,20 @@ export const CV_DATA = {
       icon: "ShieldAlert",
       accent: "bg-sapphire/5",
       link: "https://github.com/barisetiawan51-code/FraudDetection-BankJago",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      category: "DATA SCIENCE",
+      stats: [
+        { label: "Accuracy", value: "99.96%" },
+        { label: "F1-Score", value: "85.7%" }
+      ],
+      github: "https://github.com/barisetiawan51-code/FraudDetection-BankJago",
+      demo: ""
     },
     {
       id: 3,
       title: "Fuzzy Matching Regional Data",
       focus: "Automated Data Integration",
-      institution: "Mini Project SEAL Batch 2",
+      institution: "SEAL",
       highlights: [
         "Addressed inconsistencies in spelling across datasets using cleansing techniques.",
         "Applied fuzzy matching algorithm to automatically merge data with variations.",
@@ -75,12 +91,20 @@ export const CV_DATA = {
       icon: "Link",
       accent: "bg-sapphire/5",
       link: "https://github.com/barisetiawan51-code/FuzzyMatching-JoinDataset",
+      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop",
+      category: "DATA ENGINEERING",
+      stats: [
+        { label: "Join Success", value: "99.86%" },
+        { label: "Rows Processed", value: "11,567" }
+      ],
+      github: "https://github.com/barisetiawan51-code/FuzzyMatching-JoinDataset",
+      demo: ""
     },
     {
       id: 4,
       title: "SportOn E-Commerce",
       focus: "Full-stack Platform",
-      institution: "KitaKerja.ID",
+      institution: "KITAKERJA",
       highlights: [
         "Developed 100% accurate interface for 'SportOn' e-commerce website designed in Figma.",
         "Integrated MongoDB for real-time data updates and faster information access.",
@@ -88,8 +112,64 @@ export const CV_DATA = {
       ],
       tech: ["Next.js", "MongoDB", "Tailwind CSS", "Figma"],
       icon: "Terminal",
-      accent: "bg-amethyst/5",
+      accent: "bg-sapphire/5",
       link: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
+      image: "https://images.unsplash.com/photo-1636044035519-1775a11c984e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "WEB DEVELOPMENT",
+      stats: [
+        { label: "Frontend", value: "Next.js" },
+        { label: "Backend", value: "Node + MongoDB" }
+      ],
+      githubFrontend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
+      githubBackend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming-BE",
+      github: "",
+      demo: ""
+    },
+    {
+      id: 5,
+      title: "Cardiovascular Risk Detection",
+      focus: "Machine Learning and Chatbots",
+      institution: "SKILVUL",
+      highlights: [
+        "Developed a ML model for cardiovascular risk detection with 73.46% accuracy.",
+        "Implemented an interactive Rule-Based Chatbot for accurate responses.",
+        "Built a web interface using Streamlit for seamless real-time assessment.",
+      ],
+      tech: ["Python", "Machine Learning", "Streamlit", "Rule-Based Chatbot"],
+      icon: "HeartPulse",
+      accent: "bg-sapphire/5",
+      link: "https://capstone-app-5-healthcare-skilvul.streamlit.app/",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
+      category: "AI & HEALTHCARE",
+      stats: [
+        { label: "Accuracy", value: "73.46%" },
+        { label: "Interface", value: "Streamlit" }
+      ],
+      github: "https://github.com/FarhanFansuri/capstone-app-5-healthcare",
+      demo: "https://capstone-app-5-healthcare-skilvul.streamlit.app/"
+    },
+    {
+      id: 6,
+      title: "Legal Contract Analyzer",
+      focus: "Generative AI & Natural Language Processing",
+      institution: "HACKTIV8",
+      highlights: [
+        "Implemented RAG (Retrieval-Augmented Generation) framework using LangChain and Google Gemini API.",
+        "Integrated FAISS vector database for fast and accurate semantic search across legal document chunks.",
+        "Built an interactive Q&A web interface using Streamlit to analyze legal contracts in real time."
+      ],
+      tech: ["Python", "LangChain", "Google Gemini API", "FAISS", "Streamlit"],
+      icon: "FileText",
+      accent: "bg-sapphire/5",
+      link: "https://github.com/barisetiawan51-code/LLM-RAG-Gemini_Contract-Hacktiv8",
+      image: "https://images.unsplash.com/photo-1653378972269-aae6d81e2c18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "AI & NLP",
+      stats: [
+        { label: "Architecture", value: "RAG + FAISS" },
+        { label: "LLM Model", value: "Gemini API" }
+      ],
+      github: "https://github.com/barisetiawan51-code/LLM-RAG-Gemini_Contract-Hacktiv8",
+      demo: "https://legalcontractanalyzer-llm-gemini-rag-langchain.streamlit.app/"
     },
   ],
   skills: [
@@ -127,6 +207,7 @@ export const CV_DATA = {
         "Prompt Engineering",
         "RAG",
         "Machine Learning",
+        "Rule-Based Chatbot"
       ],
       color: "sapphire",
     },
@@ -158,13 +239,7 @@ export const CV_DATA = {
     },
   ],
   certifications: [
-    {
-      title: "IBM Skillbuild for AI & Cybersecurity",
-      issuer: "MSIB Skilvul Kampus Merdeka",
-      year: "2024",
-      link: "https://drive.google.com/file/d/1zJEmVruV7aYdvt8ZXDj7C9n_JTBZ9iMg/view?usp=drive_link",
-    },
-    {
+     {
       title: "Web Programming",
       issuer: "KitaKerja.ID",
       year: "2026",
@@ -176,14 +251,14 @@ export const CV_DATA = {
       year: "2025",
       link: "https://drive.google.com/file/d/1BdYBX8mQwRLZkaN2M_K5mMiKn2D1h7Pq/view?usp=drive_link",
     },
+    {
+      title: "IBM Skillbuild for AI & Cybersecurity",
+      issuer: "MSIB Skilvul Kampus Merdeka",
+      year: "2024",
+      link: "https://drive.google.com/file/d/1zJEmVruV7aYdvt8ZXDj7C9n_JTBZ9iMg/view?usp=drive_link",
+    },
   ],
   awards: [
-    {
-      title: "Top 10 and Top 1 Demo Day IBM Skillsbuild for AI & Cybersecurity",
-      issuer: "MSIB Skilvul Kampus Merdeka",
-      year: "2026",
-      link: "https://drive.google.com/file/d/1_cujSBv2NqEgoUpe_IEaMsOzBjnSI0Bu/view?usp=sharing",
-    },
     {
       title:
         "Third Best Graduate of the Faculty of Engineering and Science Graduation",
@@ -191,16 +266,15 @@ export const CV_DATA = {
       year: "2026",
       link: "https://drive.google.com/file/d/12JmEBOB8IarUSHp1EPiL_KAM7vSumasD/view?usp=sharing",
     },
+    {
+      title: "Top 10 and Top 1 Demo Day IBM Skillsbuild for AI & Cybersecurity",
+      issuer: "MSIB Skilvul Kampus Merdeka",
+      year: "2024",
+      link: "https://drive.google.com/file/d/1_cujSBv2NqEgoUpe_IEaMsOzBjnSI0Bu/view?usp=sharing",
+    },
   ],
 
   continuingEducation: [
-    {
-      title: "MSIB Kampus Merdeka - IBM Skillbuild",
-      provider: "Skilvul",
-      period: "Feb 2024 – Jun 2024",
-      details:
-        "Specialization in AI & Cybersecurity. Included training in Data Integration, UI/UX Design, and Agile methodologies.",
-    },
     {
       title: "Full-Stack Web Programming",
       provider: "KitaKerja.ID",
@@ -214,6 +288,13 @@ export const CV_DATA = {
       period: "Oct 2025",
       details:
         "Advanced course on Generative AI, RAG pipelines, and scalable AI integration.",
+    },
+    {
+      title: "MSIB Kampus Merdeka - IBM Skillbuild",
+      provider: "Skilvul",
+      period: "Feb 2024 – Jun 2024",
+      details:
+        "Specialization in AI & Cybersecurity. Included training in Data Integration, UI/UX Design, and Agile methodologies.",
     },
   ],
   footer: {

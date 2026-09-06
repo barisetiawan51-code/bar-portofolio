@@ -41,7 +41,7 @@ export default function EducationAwards() {
   );
 
   return (
-    <section id="education" className="py-24">
+    <section id="education" className="scroll-mt-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
         {/* Left Side: Education Timeline */}
         <div className="space-y-10 lg:space-y-12">
@@ -66,7 +66,7 @@ export default function EducationAwards() {
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
                     <div>
-                      <h3 className="text-base sm:text-lg font-bold text-white group hover:text-gold transition-colors">
+                      <h3 className="text-base sm:text-lg font-bold text-white group"> {/*hover:text-gold transition-colors*/}
                         {edu.institution}
                       </h3>
                       <p className="text-gold/80 font-medium text-[10px] sm:text-xs mt-1">
@@ -111,7 +111,7 @@ export default function EducationAwards() {
                 <div className="space-y-2">
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
                     <div>
-                      <h4 className="text-base sm:text-lg font-bold text-white/80 group hover:text-gold transition-colors">
+                      <h4 className="text-base sm:text-lg font-bold text-white/80 group"> {/*hover:text-gold transition-colors*/}
                         {item.title}
                       </h4>
                       <p className="text-gold/80 text-[10px] sm:text-xs font-medium">
