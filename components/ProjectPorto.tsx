@@ -19,6 +19,7 @@ type ProjectType = typeof CV_DATA.projects[0] & {
 
 function ProjectCard({ project, index }: { project: ProjectType; index: number }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <motion.div
@@ -107,11 +108,18 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               </a>
             )}
             {project.githubFrontend && project.githubBackend ? (
-              <div className="relative group">
-                <button className="px-4 py-2 rounded-xl bg-white/3 border border-white/5 text-white/60 group-hover:bg-white/8 group-hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold">
-                  <FiGithub size={18} /> Code <ChevronDown size={14} className="transition-transform duration-300 group-hover:rotate-180" />
+              <div 
+                className="relative group"
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                onMouseLeave={() => setIsDropdownOpen(false)}
+              >
+                <button 
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className={`px-4 py-2 rounded-xl border border-white/5 transition-colors flex items-center gap-1.5 text-xs font-semibold ${isDropdownOpen ? 'bg-white/8 text-white' : 'bg-white/3 text-white/60 group-hover:bg-white/8 group-hover:text-white'}`}
+                >
+                  <FiGithub size={18} /> Code <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'group-hover:rotate-180'}`} />
                 </button>
-                <div className="absolute right-0 top-full mt-2 w-27 opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                <div className={`absolute right-0 top-full mt-2 w-27 transition-all duration-300 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto'}`}>
                   <div className="p-2 rounded-xl bg-[#1C1F26] border border-white/10 shadow-2xl flex flex-col gap-1">
                     <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
                       <Globe size={14} /> Frontend
