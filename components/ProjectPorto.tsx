@@ -106,7 +106,6 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
                 <LaptopIcon size={18} /> Demo App
               </a>
             )}
-<<<<<<< HEAD
             {project.githubFrontend && project.githubBackend ? (
               <div className="relative group">
                 <button className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-white/60 group-hover:bg-white/[0.08] group-hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold">
@@ -129,22 +128,6 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
                   <FiGithub size={18} /> Code
                 </a>
               )
-=======
-            {project.githubFrontend && (
-              <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> FE
-              </a>
-            )}
-            {project.githubBackend && (
-              <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> BE
-              </a>
-            )}
-            {project.github && !project.githubFrontend && !project.githubBackend && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors">
-                <FiGithub size={18} />
-              </a>
->>>>>>> 404ba89c076225b22f049f89cb9828c878238e71
             )}
           </div>
         </div>
