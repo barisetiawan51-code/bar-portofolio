@@ -80,9 +80,9 @@ export default function TechnicalArsenal() {
                     key={item}
                     whileHover={{ scale: 1.05, y: -2 }}
                     className={`px-3 py-1.5 rounded-lg border text-[10px] font-medium transition-all duration-300 cursor-default
-                      ${category.color === "sapphire" ? "bg-sapphire/10 border-sapphire/30 text-sapphire hover:bg-sapphire/20 hover:border-sapphire/50 hover:shadow-[0_0_15px_rgba(26,62,114,0.3)]" : ""}
-                      ${category.color === "amethyst" ? "bg-amethyst/10 border-amethyst/30 text-amethyst hover:bg-amethyst/20 hover:border-amethyst/50 hover:shadow-[0_0_15px_rgba(91,60,122,0.3)]" : ""}
-                      ${category.color === "jade" ? "bg-jade/10 border-jade/30 text-jade hover:bg-jade/20 hover:border-jade/50 hover:shadow-[0_0_15px_rgba(21,94,61,0.3)]" : ""}
+                      ${category.color === "sapphire" ? "bg-sapphire/10 border-sapphire/30 text-sapphire hover:bg-sapphire/20 active:bg-sapphire/20 hover:border-sapphire/50 active:border-sapphire/50 hover:shadow-[0_0_15px_rgba(26,62,114,0.3)] active:shadow-[0_0_15px_rgba(26,62,114,0.3)]" : ""}
+                      ${category.color === "amethyst" ? "bg-amethyst/10 border-amethyst/30 text-amethyst hover:bg-amethyst/20 active:bg-amethyst/20 hover:border-amethyst/50 active:border-amethyst/50 hover:shadow-[0_0_15px_rgba(91,60,122,0.3)] active:shadow-[0_0_15px_rgba(91,60,122,0.3)]" : ""}
+                      ${category.color === "jade" ? "bg-jade/10 border-jade/30 text-jade hover:bg-jade/20 active:bg-jade/20 hover:border-jade/50 active:border-jade/50 hover:shadow-[0_0_15px_rgba(21,94,61,0.3)] active:shadow-[0_0_15px_rgba(21,94,61,0.3)]" : ""}
                     `}
                   >
                     {item}

@@ -150,7 +150,7 @@ export default function EducationAwards() {
               <div className="flex items-center gap-3 sm:gap-4">
                 <button
                   onClick={prevCert}
-                  className="p-1.5 sm:p-2 rounded-full bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-gold/5 transition-all text-white/30 hover:text-gold"
+                  className="p-1.5 sm:p-2 rounded-full bg-white/5 border border-white/5 hover:border-gold/30 active:border-gold/30 hover:bg-gold/5 active:bg-gold/5 transition-all text-white/30 hover:text-gold active:text-gold"
                 >
                   <ChevronLeft size={14} />
                 </button>
@@ -164,7 +164,7 @@ export default function EducationAwards() {
                 </div>
                 <button
                   onClick={nextCert}
-                  className="p-1.5 sm:p-2 rounded-full bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-gold/5 transition-all text-white/30 hover:text-gold"
+                  className="p-1.5 sm:p-2 rounded-full bg-white/5 border border-white/5 hover:border-gold/30 active:border-gold/30 hover:bg-gold/5 active:bg-gold/5 transition-all text-white/30 hover:text-gold active:text-gold"
                 >
                   <ChevronRight size={14} />
                 </button>
@@ -188,7 +188,7 @@ export default function EducationAwards() {
                       href={cert.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-gold/5 transition-all cursor-pointer"
+                      className="group flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 active:border-gold/30 hover:bg-gold/5 active:bg-gold/5 transition-all cursor-pointer"
                     >
                       <div className="flex items-center gap-4 sm:gap-5">
                         <div className="w-9 h-9 sm:w-11 sm:h-11 shrink-0 aspect-square rounded-xl bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
@@ -235,7 +235,7 @@ export default function EducationAwards() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.1 }}
                       viewport={{ once: true }}
-                      className="group flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-gold/5 transition-all cursor-pointer"
+                      className="group flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 active:border-gold/30 hover:bg-gold/5 active:bg-gold/5 transition-all cursor-pointer"
                     >
                       <div className="flex items-center gap-4 sm:gap-5">
                         <div className="w-9 h-9 sm:w-11 sm:h-11 shrink-0 aspect-square rounded-xl bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">

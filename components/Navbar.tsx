@@ -67,14 +67,14 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="nav-link text-sm font-medium hover:text-sapphire hover:sapphire-glow transition-all"
+                className="nav-link text-sm font-medium hover:text-sapphire active:text-sapphire hover:sapphire-glow transition-all"
               >
                 {link.name}
               </Link>
             ))}
             <a
               href={`mailto:${CV_DATA.contact.email}`}
-              className="px-6 py-2 glass-opulent border border-gold/30 rounded-lg text-xs font-bold text-gold uppercase tracking-[0.2em] hover:bg-gold hover:text-black transition-all"
+              className="px-6 py-2 glass-opulent border border-gold/30 rounded-lg text-xs font-bold text-gold uppercase tracking-[0.2em] hover:bg-gold active:bg-gold hover:text-black active:text-black transition-all"
             >
               Contact
             </a>
@@ -120,7 +120,7 @@ export default function Navbar() {
                   className={`p-2 rounded-xl transition-all duration-300 ${
                     isActive
                       ? "text-gold bg-gold/10"
-                      : "text-white/40 hover:text-white"
+                      : "text-white/40 hover:text-white active:text-white"
                   }`}
                 >
                   <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />

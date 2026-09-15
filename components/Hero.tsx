@@ -89,7 +89,7 @@ export default function Hero() {
             href={CV_DATA.contact.cvUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 glass-opulent border border-gold/30 text-white font-bold rounded-xl hover:bg-gold/5 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 text-sm sm:text-base"
+            className="px-8 py-4 glass-opulent border border-gold/30 text-white font-bold rounded-xl hover:bg-gold/5 active:bg-gold/5 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 text-sm sm:text-base"
           >
             Download CV <Download size={18} />
           </a>

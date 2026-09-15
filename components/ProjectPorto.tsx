@@ -103,7 +103,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
         <div className="mt-auto pt-5 border-t border-white/5 flex items-center justify-end">
           <div className="flex gap-2">
             {project.demo && (
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white text-xs font-semibold flex items-center gap-2 transition-colors">
+              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-600 text-white text-xs font-semibold flex items-center gap-2 transition-colors">
                 <LaptopIcon size={18} /> Demo App
               </a>
             )}
@@ -115,16 +115,16 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               >
                 <button 
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className={`px-4 py-2 rounded-xl border border-white/5 transition-colors flex items-center gap-1.5 text-xs font-semibold ${isDropdownOpen ? 'bg-white/8 text-white' : 'bg-white/3 text-white/60 group-hover:bg-white/8 group-hover:text-white'}`}
+                  className={`px-4 py-2 rounded-xl border border-white/5 transition-colors flex items-center gap-1.5 text-xs font-semibold ${isDropdownOpen ? 'bg-white/8 text-white' : 'bg-white/3 text-white/60 group-hover:bg-white/8 group-hover:text-white active:bg-white/8 active:text-white'}`}
                 >
                   <FiGithub size={18} /> Code <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'group-hover:rotate-180'}`} />
                 </button>
                 <div className={`absolute right-0 top-full mt-2 w-27 transition-all duration-300 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto'}`}>
                   <div className="p-2 rounded-xl bg-[#1C1F26] border border-white/10 shadow-2xl flex flex-col gap-1">
-                    <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                    <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 active:bg-white/5 text-white/70 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
                       <Globe size={14} /> Frontend
                     </a>
-                    <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                    <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 active:bg-white/5 text-white/70 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
                       <Database size={14} /> Backend
                     </a>
                   </div>
@@ -132,7 +132,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               </div>
             ) : (
               project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/3 hover:bg-white/8 border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/3 hover:bg-white/8 active:bg-white/8 border border-white/5 text-white/60 hover:text-white active:text-white transition-colors flex items-center gap-1.5 text-xs">
                   <FiGithub size={18} /> Code
                 </a>
               )
@@ -179,7 +179,7 @@ export default function SelectedWorks() {
             className={`px-6 py-2 rounded-xl text-xs font-semibold tracking-wider transition-all duration-300 ${
               activeFilter === f 
                 ? 'bg-white text-[#111215]' 
-                : 'bg-white/3 text-white/40 hover:bg-white/8 hover:text-white border border-white/5'
+                : 'bg-white/3 text-white/40 hover:bg-white/8 hover:text-white active:bg-white/8 active:text-white border border-white/5'
             }`}
           >
             {f}
