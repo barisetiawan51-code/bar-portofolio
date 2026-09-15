@@ -75,7 +75,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
 
           {/* Stats Box */}
           {project.stats && (
-            <div className="grid grid-cols-2 gap-4 bg-white/[0.02] border border-white/5 rounded-2xl p-4 mb-6">
+            <div className="grid grid-cols-2 gap-4 bg-white/2 border border-white/5 rounded-2xl p-4 mb-6">
               {project.stats.map((stat: any, i: number) => (
                 <div key={i} className={`flex flex-col gap-1 ${i === 1 ? 'items-end text-right' : ''}`}>
                   <span className="text-[10px] text-white/30 font-medium uppercase tracking-wider">{stat.label}</span>
@@ -91,7 +91,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
           {project.tech.map((t: string) => (
             <span
               key={t}
-              className="px-2.5 py-1 rounded-lg bg-white/[0.03] border border-white/5 text-[10px] text-white/40 font-medium"
+              className="px-2.5 py-1 rounded-lg bg-white/3 border border-white/5 text-[10px] text-white/40 font-medium"
             >
               {t}
             </span>
@@ -108,7 +108,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
             )}
             {project.githubFrontend && project.githubBackend ? (
               <div className="relative group">
-                <button className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-white/60 group-hover:bg-white/[0.08] group-hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold">
+                <button className="px-4 py-2 rounded-xl bg-white/3 border border-white/5 text-white/60 group-hover:bg-white/8 group-hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold">
                   <FiGithub size={18} /> Code <ChevronDown size={14} className="transition-transform duration-300 group-hover:rotate-180" />
                 </button>
                 <div className="absolute right-0 top-full mt-2 w-27 opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
@@ -124,7 +124,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               </div>
             ) : (
               project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/3 hover:bg-white/8 border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
                   <FiGithub size={18} /> Code
                 </a>
               )
@@ -171,7 +171,7 @@ export default function SelectedWorks() {
             className={`px-6 py-2 rounded-xl text-xs font-semibold tracking-wider transition-all duration-300 ${
               activeFilter === f 
                 ? 'bg-white text-[#111215]' 
-                : 'bg-white/[0.03] text-white/40 hover:bg-white/[0.08] hover:text-white border border-white/5'
+                : 'bg-white/3 text-white/40 hover:bg-white/8 hover:text-white border border-white/5'
             }`}
           >
             {f}
