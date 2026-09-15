@@ -39,10 +39,7 @@ export default function TechnicalArsenal() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-8 py-14">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-opulent border border-gold/20 text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            <Zap size={12} />
-            <span>Capability Index</span>
-          </div>
+
           <h2 className="text-4xl md:text-5xl font-bold font-outfit mb-4">
             Technical <span className="text-gold">Skills</span>
           </h2>

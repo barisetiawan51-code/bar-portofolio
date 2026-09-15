@@ -4,31 +4,15 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Database,
-  ShieldAlert,
-  Link as LinkIcon,
-  Terminal,
-  HeartPulse,
-  Cpu,
   ChevronRight,
+  ChevronDown,
+  Globe,
   LaptopIcon
 } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
 import { CV_DATA } from "@/lib/constant";
 
-const iconMap = {
-  Database: <Database className="text-sapphire" size={24} />,
-  ShieldAlert: <ShieldAlert className="text-sapphire" size={24} />,
-  Link: <LinkIcon className="text-sapphire" size={24} />,
-  Terminal: <Terminal className="text-sapphire" size={24} />,
-  HeartPulse: <HeartPulse className="text-sapphire" size={24} />,
-};
-
-const projects = CV_DATA.projects.map((p) => ({
-  ...p,
-  icon: iconMap[p.icon as keyof typeof iconMap],
-}));
-
-type ProjectType = typeof projects[0] & {
+type ProjectType = typeof CV_DATA.projects[0] & {
   githubFrontend?: string;
   githubBackend?: string;
 };
@@ -43,17 +27,17 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
       transition={{ delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -8 }}
-      className="group relative bg-[#0B0C10] rounded-3xl border border-white/5 overflow-hidden transition-all duration-500 hover:border-white/10 h-full flex flex-col"
+      className="group relative bg-[#0B0C10] rounded-3xl border border-white/5 transition-all duration-500 hover:border-white/10 h-full flex flex-col"
     >
       {/* Image Section */}
-      <div className="relative h-56 w-full overflow-hidden shrink-0">
+      <div className="relative h-56 w-full overflow-hidden shrink-0 rounded-t-3xl">
         <div className="absolute inset-0 bg-white/5" />
         <img 
           src={project.image} 
           alt={project.title} 
           className="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#0B0C10] via-[#0B0C10]/60 to-transparent" />
         
         {/* Badges */}
         <div className="absolute top-5 left-5 flex gap-2">
@@ -119,23 +103,31 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
           <div className="flex gap-2">
             {project.demo && (
               <a href={project.demo} target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white text-xs font-semibold flex items-center gap-2 transition-colors">
-                <LaptopIcon size={14} /> Demo App
+                <LaptopIcon size={18} /> Demo App
               </a>
             )}
-            {project.githubFrontend && (
-              <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> Frontend
-              </a>
-            )}
-            {project.githubBackend && (
-              <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
-                <FiGithub size={14} /> Backend
-              </a>
-            )}
-            {project.github && !project.githubFrontend && !project.githubBackend && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors">
-                <FiGithub size={18} />
-              </a>
+            {project.githubFrontend && project.githubBackend ? (
+              <div className="relative group">
+                <button className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-white/60 group-hover:bg-white/[0.08] group-hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold">
+                  <FiGithub size={18} /> Code <ChevronDown size={14} className="transition-transform duration-300 group-hover:rotate-180" />
+                </button>
+                <div className="absolute right-0 top-full mt-2 w-27 opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                  <div className="p-2 rounded-xl bg-[#1C1F26] border border-white/10 shadow-2xl flex flex-col gap-1">
+                    <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                      <Globe size={14} /> Frontend
+                    </a>
+                    <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                      <Database size={14} /> Backend
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 text-white/60 hover:text-white transition-colors flex items-center gap-1.5 text-xs">
+                  <FiGithub size={18} /> Code
+                </a>
+              )
             )}
           </div>
         </div>
@@ -145,14 +137,21 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
 }
 
 export default function SelectedWorks() {
+  const [activeFilter, setActiveFilter] = useState('All');
+  const filters = ['All', 'AI', 'Data', 'Web'];
+
+  const filteredProjects = CV_DATA.projects.filter(project => {
+    if (activeFilter === 'All') return true;
+    if (activeFilter === 'AI') return project.category.includes('AI');
+    if (activeFilter === 'Data') return project.category.includes('DATA');
+    if (activeFilter === 'Web') return project.category.includes('WEB');
+    return true;
+  });
+
   return (
     <section id="projects" className="scroll-mt-24">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-6">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-opulent border border-gold/20 text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            <Cpu size={12} />
-            <span>Project Registry</span>
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold font-outfit tracking-tight">
             Project <span className="text-gold">Portofolio</span>
           </h2>
@@ -164,8 +163,24 @@ export default function SelectedWorks() {
         </p>
       </div>
 
+      <div className="flex flex-wrap gap-2 mb-8">
+        {filters.map(f => (
+          <button
+            key={f}
+            onClick={() => setActiveFilter(f)}
+            className={`px-6 py-2 rounded-xl text-xs font-semibold tracking-wider transition-all duration-300 ${
+              activeFilter === f 
+                ? 'bg-white text-[#111215]' 
+                : 'bg-white/[0.03] text-white/40 hover:bg-white/[0.08] hover:text-white border border-white/5'
+            }`}
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>

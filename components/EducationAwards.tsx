@@ -45,10 +45,7 @@ export default function EducationAwards() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
         {/* Left Side: Education Timeline */}
         <div className="space-y-10 lg:space-y-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-opulent border border-gold/20 text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            <GraduationCap size={12} />
-            <span>Academic Credentials</span>
-          </div>
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-outfit">
             Education <span className="text-gold">& Training</span>
           </h2>
@@ -133,10 +130,7 @@ export default function EducationAwards() {
 
         {/* Right Side: Certifications & Awards */}
         <div className="space-y-10 lg:space-y-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-opulent border border-gold/20 text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            <ScrollText size={12} />
-            <span>Professional Registry</span>
-          </div>
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-outfit">
             Certifications <span className="text-gold">& Honors</span>
           </h2>
@@ -266,9 +260,9 @@ export default function EducationAwards() {
               </div>
             )}
 
-            <div className="pt-6 text-center">
+            <div className="pt-4 text-center">
               <p className="text-[9px] sm:text-[10px] text-white/20 uppercase tracking-[0.4em] font-mono">
-                Verified Achievement Loop
+                Verified Achievements
               </p>
             </div>
           </div>

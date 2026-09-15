@@ -49,7 +49,7 @@ export const CV_DATA = {
       category: "AI",
       stats: [
         { label: "Accuracy", value: "90%" },
-        { label: "Model", value: "Granite" }
+        { label: "Engine", value: "IBM Granite" }
       ],
       github: "https://github.com/barisetiawan51-code/LLM_IBM_GRANITE_MODEL",
       demo: ""
@@ -72,7 +72,7 @@ export const CV_DATA = {
       category: "DATA SCIENCE",
       stats: [
         { label: "Accuracy", value: "99.96%" },
-        { label: "F1-Score", value: "85.7%" }
+        { label: "Precision", value: "94.9%" }
       ],
       github: "https://github.com/barisetiawan51-code/FraudDetection-BankJago",
       demo: ""
@@ -94,8 +94,8 @@ export const CV_DATA = {
       image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop",
       category: "DATA ENGINEERING",
       stats: [
-        { label: "Join Success", value: "99.86%" },
-        { label: "Rows Processed", value: "11,567" }
+        { label: "Match Rate", value: "99.86%" },
+        { label: "Records", value: "11.5K+" }
       ],
       github: "https://github.com/barisetiawan51-code/FuzzyMatching-JoinDataset",
       demo: ""
@@ -110,20 +110,20 @@ export const CV_DATA = {
         "Integrated MongoDB for real-time data updates and faster information access.",
         "Implemented admin authentication system for secure access and content management.",
       ],
-      tech: ["Next.js", "MongoDB", "Tailwind CSS", "Figma"],
+      tech: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
       icon: "Terminal",
       accent: "bg-sapphire/5",
       link: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
       image: "https://images.unsplash.com/photo-1636044035519-1775a11c984e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "WEB DEVELOPMENT",
       stats: [
-        { label: "Frontend", value: "Next.js" },
-        { label: "Backend", value: "Node + MongoDB" }
+        { label: "Fidelity", value: "100%" },
+        { label: "Database", value: "NoSQL" }
       ],
       githubFrontend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming",
       githubBackend: "https://github.com/barisetiawan51-code/KitaKerja-WebProgramming-BE",
       github: "",
-      demo: ""
+      demo: "https://kita-kerja-web-programming.vercel.app/"
     },
     {
       id: 5,
@@ -142,8 +142,8 @@ export const CV_DATA = {
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
       category: "AI & HEALTHCARE",
       stats: [
-        { label: "Accuracy", value: "73.46%" },
-        { label: "Interface", value: "Streamlit" }
+        { label: "Accuracy", value: "73.5%" },
+        { label: "Feature", value: "Chatbot" }
       ],
       github: "https://github.com/FarhanFansuri/capstone-app-5-healthcare",
       demo: "https://capstone-app-5-healthcare-skilvul.streamlit.app/"
@@ -165,8 +165,8 @@ export const CV_DATA = {
       image: "https://images.unsplash.com/photo-1653378972269-aae6d81e2c18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "AI & NLP",
       stats: [
-        { label: "Architecture", value: "RAG + FAISS" },
-        { label: "LLM Model", value: "Gemini API" }
+        { label: "Engine", value: "RAG+FAISS" },
+        { label: "Corpus", value: "30 Contracts" }
       ],
       github: "https://github.com/barisetiawan51-code/LLM-RAG-Gemini_Contract-Hacktiv8",
       demo: "https://legalcontractanalyzer-llm-gemini-rag-langchain.streamlit.app/"
@@ -214,7 +214,7 @@ export const CV_DATA = {
     {
       category: "Tools & DevOps",
       icon: "Cpu",
-      items: ["Git/GitHub", "Figma", "Postman", "VS Code", "Vercel", "BRD"],
+      items: ["Git/GitHub", "Postman", "VS Code", "Vercel", "BRD"],
       color: "amethyst",
     },
     {

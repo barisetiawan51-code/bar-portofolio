@@ -43,18 +43,6 @@ export default function Hero() {
           {CV_DATA.name}
         </motion.div>
 
-        {/* Badges */}
-        <div className="flex flex-wrap justify-center gap-3 mb-4">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full glass-opulent border border-gold/20 text-white/80 text-[10px] sm:text-xs font-medium"
-          >
-            <BadgeCheck size={14} className="text-gold" />
-            <span>{CV_DATA.hero.badge}</span>
-          </motion.div>
-        </div>
 
         {/* Title */}
         <motion.h1
