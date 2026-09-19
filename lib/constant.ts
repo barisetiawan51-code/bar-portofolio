@@ -1,7 +1,8 @@
 export const CV_DATA = {
   name: "Imam Bari Setiawan",
   firstName: "Imam",
-  lastName: "Bari Setiawan",
+  midName: "Bari",
+  lastName: "Setiawan",
   title: "Data Scientist & Full-Stack Developer",
   summary:
     "Data Scientist & Front-end Developer focused on developing adaptive end-to-end digital solutions. Proficient in extracting strategic business insights through Python and Excel, and able to quickly transform them into data applications using Streamlit. Expertise in building modern, scalable web applications using Next.js and Tailwind CSS, with efficient REST API integration.",
@@ -16,6 +17,7 @@ export const CV_DATA = {
   },
   navLinks: [
     { name: "Home", href: "#home", icon: "Home" },
+    { name: "About", href: "#about", icon: "User" },
     { name: "Portofolio", href: "#projects", icon: "Briefcase" },
     { name: "Skills", href: "#skills", icon: "Cpu" },
     {
@@ -28,7 +30,10 @@ export const CV_DATA = {
     badge: "Available for Opportunities",
     title: "Data Scientist & \n Full-Stack Developer",
     subtitle:
-      "Data Scientist & Front-end Developer focused on developing adaptive end-to-end digital solutions. Proficient in extracting strategic business insights through Python and building scalable web applications using Next.js.",
+      "Transforming data and code into impactful solutions, let's innovate together.",
+  },
+  about: {
+    summary: "I am Imam Bari Setiawan, an Informatics Engineering graduate from Universitas Muhammadiyah Purwokerto, specializing in Data Science and Full-Stack Web Development. I have experience developing end-to-end digital solutions that combine data analysis with modern, responsive interfaces. In the fields of Data Science and AI, I am proficient in building Machine Learning models (such as XGBoost for fraud detection systems achieving 99.96% accuracy) and GenAI/RAG architectures using LangChain, FAISS, and Google Gemini/IBM Granite, while also creating interactive applications with Streamlit. As a Full-Stack Developer, I complement my analytical expertise with the ability to build fully integrated, modern web applications using Next.js, Tailwind CSS, Express.js, and MongoDB. Training experiences with Hacktiv8, KitaKerja.ID, and Skilvul—where I won first place at the Demo Day event—have shaped a mindset focused on system efficiency, data security, and data-driven business solutions.",
   },
   projects: [
     {
@@ -299,6 +304,6 @@ export const CV_DATA = {
   ],
   footer: {
     location: "Purbalingga, Jawa Tengah, Indonesia",
-    languages: "Bahasa (Fluent) • English (Elementary)",
+    languages: "Indonesia (Fluent) • English (Elementary)",
   },
 };
