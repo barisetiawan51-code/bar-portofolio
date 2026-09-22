@@ -34,22 +34,6 @@
   box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
 }
 
-@utility gold-border {
-  border: 1px solid var(--color-gold);
-}
-
-@utility gold-glow {
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
-}
-
-@utility sapphire-glow {
-  text-shadow: 0 0 10px rgba(26, 62, 114, 0.5);
-}
-
-@utility jade-glow {
-  box-shadow: 0 0 20px rgba(21, 94, 61, 0.4);
-}
-
 @utility nav-link {
   @apply text-white/70 hover:text-white transition-all duration-300 relative;
 }

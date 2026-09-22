@@ -3,12 +3,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  GraduationCap,
   Award,
   ExternalLink,
   BookOpen,
   Medal,
-  ScrollText,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -59,18 +57,18 @@ export default function EducationAwards() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute -left-8.25 sm:-left-10.25 top-0 w-4 h-4 rounded-full bg-background border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.4)]" />
+                <div className="absolute -left-8.25 sm:-left-10.25 top-2 sm:top-[11px] w-4 h-4 rounded-full bg-background border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.4)]" />
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
                     <div>
-                      <h3 className="text-base sm:text-lg font-bold text-white group"> {/*hover:text-gold transition-colors*/}
+                      <h3 className="text-base sm:text-lg font-bold text-white group">
                         {edu.institution}
                       </h3>
                       <p className="text-gold/80 font-medium text-[10px] sm:text-xs mt-1">
                         {edu.degree}
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono text-white/30 uppercase tracking-widest">
+                    <span className="text-[10px] font-mono text-white/30 uppercase tracking-widest sm:mt-1.5">
                       {edu.period}
                     </span>
                   </div>
@@ -104,18 +102,18 @@ export default function EducationAwards() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute left-[-32.5px] sm:left-[-40.5px] top-0 w-3 h-3 rounded-full bg-background border border-gold/40" />
+                <div className="absolute left-[-32.5px] sm:left-[-40.5px] top-2.5 sm:top-[13px] w-3 h-3 rounded-full bg-background border border-gold/40" />
                 <div className="space-y-2">
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
                     <div>
-                      <h4 className="text-base sm:text-lg font-bold text-white/80 group"> {/*hover:text-gold transition-colors*/}
+                      <h4 className="text-base sm:text-lg font-bold text-white/80 group">
                         {item.title}
                       </h4>
                       <p className="text-gold/80 text-[10px] sm:text-xs font-medium">
                         {item.provider}
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono text-white/30 uppercase">
+                    <span className="text-[10px] font-mono text-white/30 uppercase sm:mt-1.5">
                       {item.period}
                     </span>
                   </div>
@@ -138,10 +136,10 @@ export default function EducationAwards() {
           <div className="glass-opulent rounded-4xl sm:rounded-[2.5rem] border border-gold/10 p-6 sm:p-8 space-y-6 relative overflow-hidden">
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('/marble-texture.png')] bg-cover grayscale" />
 
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between mb-5">
               <div className="flex items-center gap-2">
-                <BookOpen size={14} className="text-white/40" />
-                <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/30">
+                <BookOpen size={14} className="text-white" />
+                <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white">
                   Certifications
                 </span>
               </div>
@@ -220,7 +218,7 @@ export default function EducationAwards() {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Medal size={14} className="text-gold" />
-                  <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gold/60">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gold">
                     Honors
                   </span>
                 </div>

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { MapPin, Globe2 } from "lucide-react";
-import Link from "next/link";
 import { CV_DATA } from "@/lib/constant";
 
 export default function Footer() {
@@ -16,17 +15,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-16">
           {/* Brand & Location */}
           <div className="space-y-4">
-            {/*
-            <Link
-              href="/"
-              className="text-2xl font-bold font-outfit tracking-tighter text-white group"
-            >
-              BAR
-              <span className="text-gold group-hover:sapphire-glow transition-all">
-                .
-              </span>
-            </Link>
-            */}
             <div className="flex items-center gap-2 text-white/40 text-sm font-light">
               <MapPin size={14} className="text-gold/60" />
               <span>{CV_DATA.footer.location}</span>
@@ -61,7 +49,7 @@ export default function Footer() {
           </div>
 
           {/* Language Note */}
-          <div className="flex items-center gap-3 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+          <div className="flex items-center gap-3 px-4 py-2 rounded-xl glass-opulent border border-gold/30">
             <Globe2 size={14} className="text-jade" />
             <span className="text-[10px] uppercase tracking-widest text-white/50 font-medium">
               {CV_DATA.footer.languages}

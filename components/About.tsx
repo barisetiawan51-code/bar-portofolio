@@ -7,7 +7,7 @@ import { CV_DATA } from "@/lib/constant";
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24 pt-4 sm:pt-6 lg:pt-0">
+    <section id="about" className="scroll-mt-18 pt-4 sm:pt-6 lg:pt-0">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Left Column: Avatar Photo */}
         <div className="lg:col-span-5 flex justify-center lg:justify-start">
@@ -62,7 +62,7 @@ export default function About() {
           >
             <a
               href="#projects"
-              className="group relative px-8 py-4 bg-jade text-white font-bold rounded-xl overflow-hidden jade-glow transition-all hover:scale-105 active:scale-95 flex items-center justify-center text-sm sm:text-base"
+              className="group relative px-8 py-4 bg-jade text-white font-bold rounded-xl overflow-hidden transition-all hover:scale-105 active:scale-95 flex items-center justify-center text-sm sm:text-base"
             >
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="flex items-center gap-2">

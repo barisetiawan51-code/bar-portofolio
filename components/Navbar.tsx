@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Home, User, Briefcase, Cpu, GraduationCap, Mail } from "lucide-react";
 import Link from "next/link";
 import { CV_DATA } from "@/lib/constant";
@@ -57,7 +57,7 @@ export default function Navbar() {
             className="text-xl lg:text-2xl font-bold font-outfit tracking-tighter text-white group transition-all"
           >
             BAR
-            <span className="text-gold group-hover:sapphire-glow transition-all">
+            <span className="text-gold transition-all">
               .
             </span>
           </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="nav-link text-sm font-medium hover:text-sapphire active:text-sapphire hover:sapphire-glow transition-all"
+                className="nav-link text-sm font-medium hover:text-gold active:text-gold transition-all"
               >
                 {link.name}
               </Link>

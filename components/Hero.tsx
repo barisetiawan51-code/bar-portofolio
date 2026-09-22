@@ -52,7 +52,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-bold font-outfit tracking-tight mb-6 leading-[1.1]"
+            className="text-4xl sm:text-6xl lg:text-7xl font-bold font-outfit tracking-tight mb-3 leading-[1.1]"
           >
             <span className="bg-linear-to-r from-sapphire via-white to-amethyst bg-clip-text text-transparent whitespace-pre-line">
               {CV_DATA.hero.title}
@@ -64,7 +64,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-white/50 text-xs xs:text-base xs:text-xs font-light leading-relaxed mb-8 max-w-2xl text-left"
+            className="text-white/50 text-xs sm:text-sm font-light leading-relaxed mb-6 max-w-2xl text-left"
           >
             {CV_DATA.hero.subtitle}
           </motion.p>
@@ -82,7 +82,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 hover:shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95"
               >
                 <FaGithub className="group-hover:scale-110 transition-transform" size={22} />
               </a>
@@ -94,7 +94,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 hover:shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95"
               >
                 <FaLinkedinIn className="group-hover:scale-110 transition-transform" size={22} />
               </a>
@@ -104,7 +104,7 @@ export default function Hero() {
               <a
                 href={`mailto:${CV_DATA.contact.email}`}
                 aria-label="Email"
-                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95 hover:shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                className="group w-12 h-12 sm:w-13 sm:h-13 rounded-xl glass-opulent border border-gold/30 hover:border-gold/60 text-gold hover:text-white flex items-center justify-center transition-all hover:scale-110 active:scale-95"
               >
                 <FiMail className="group-hover:scale-110 transition-transform" size={22} />
               </a>

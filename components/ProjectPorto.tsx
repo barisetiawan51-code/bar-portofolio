@@ -28,8 +28,11 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
       transition={{ delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -8 }}
-      className="group relative bg-[#0B0C10] rounded-3xl border border-white/5 transition-all duration-500 hover:border-white/10 h-full flex flex-col"
+      className="group relative glass-opulent rounded-3xl border border-gold/10 transition-all duration-500 hover:border-gold/30 h-full flex flex-col overflow-hidden"
     >
+      {/* Background Texture matching Skills */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('/marble-texture.png')] bg-cover grayscale" />
+
       {/* Image Section */}
       <div className="relative h-56 w-full overflow-hidden shrink-0 rounded-t-3xl">
         <div className="absolute inset-0 bg-white/5" />
@@ -38,7 +41,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
           alt={project.title} 
           className="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#0B0C10] via-[#0B0C10]/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/60 to-transparent" />
         
         {/* Badges */}
         <div className="absolute top-5 left-5 flex gap-2">
@@ -103,7 +106,12 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
         <div className="mt-auto pt-5 border-t border-white/5 flex items-center justify-end">
           <div className="flex gap-2">
             {project.demo && (
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-600 text-white text-xs font-semibold flex items-center gap-2 transition-colors">
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-xl bg-jade hover:bg-jade/90 active:bg-jade/90 text-white text-xs font-semibold flex items-center gap-2 transition-all hover:scale-105 active:scale-95"
+              >
                 <LaptopIcon size={18} /> Demo App
               </a>
             )}
@@ -115,16 +123,16 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               >
                 <button 
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className={`px-4 py-2 rounded-xl border border-white/5 transition-colors flex items-center gap-1.5 text-xs font-semibold ${isDropdownOpen ? 'bg-white/8 text-white' : 'bg-white/3 text-white/60 group-hover:bg-white/8 group-hover:text-white active:bg-white/8 active:text-white'}`}
+                  className={`px-4 py-2 rounded-xl glass-opulent border border-gold/30 hover:border-gold/50 active:border-gold/50 text-white hover:bg-gold/5 active:bg-gold/5 transition-all hover:scale-105 active:scale-95 flex items-center gap-1.5 text-xs font-semibold ${isDropdownOpen ? 'border-gold/60 bg-gold/10' : ''}`}
                 >
                   <FiGithub size={18} /> Code <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'group-hover:rotate-180'}`} />
                 </button>
-                <div className={`absolute right-0 top-full mt-2 w-27 transition-all duration-300 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto'}`}>
-                  <div className="p-2 rounded-xl bg-[#1C1F26] border border-white/10 shadow-2xl flex flex-col gap-1">
-                    <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 active:bg-white/5 text-white/70 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                <div className={`absolute right-0 top-full mt-2 w-28 transition-all duration-300 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto'}`}>
+                  <div className="p-2 rounded-xl glass-opulent border border-gold/30 shadow-2xl flex flex-col gap-1 bg-background/95 backdrop-blur-xl">
+                    <a href={project.githubFrontend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-gold/10 active:bg-gold/10 text-white/80 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
                       <Globe size={14} /> Frontend
                     </a>
-                    <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-white/5 active:bg-white/5 text-white/70 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
+                    <a href={project.githubBackend} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg hover:bg-gold/10 active:bg-gold/10 text-white/80 hover:text-white active:text-white transition-colors flex items-center gap-2 text-[11px] font-medium">
                       <Database size={14} /> Backend
                     </a>
                   </div>
@@ -132,7 +140,12 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
               </div>
             ) : (
               project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-xl bg-white/3 hover:bg-white/8 active:bg-white/8 border border-white/5 text-white/60 hover:text-white active:text-white transition-colors flex items-center gap-1.5 text-xs">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-xl glass-opulent border border-gold/30 hover:border-gold/50 active:border-gold/50 text-white hover:bg-gold/5 active:bg-gold/5 transition-all hover:scale-105 active:scale-95 flex items-center gap-1.5 text-xs font-semibold"
+                >
                   <FiGithub size={18} /> Code
                 </a>
               )
@@ -176,10 +189,10 @@ export default function SelectedWorks() {
           <button
             key={f}
             onClick={() => setActiveFilter(f)}
-            className={`px-6 py-2 rounded-xl text-xs font-semibold tracking-wider transition-all duration-300 ${
+            className={`px-6 py-2 rounded-xl text-xs font-semibold tracking-wider transition-all duration-300 hover:scale-105 active:scale-95 ${
               activeFilter === f 
-                ? 'bg-white text-[#111215]' 
-                : 'bg-white/3 text-white/40 hover:bg-white/8 hover:text-white active:bg-white/8 active:text-white border border-white/5'
+                ? 'bg-gold text-[#111215] font-bold' 
+                : 'glass-opulent border border-gold/30 text-white/70 hover:text-white hover:border-gold/50 hover:bg-gold/5 active:bg-gold/5'
             }`}
           >
             {f}
