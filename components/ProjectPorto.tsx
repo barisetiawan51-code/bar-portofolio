@@ -28,7 +28,7 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
       transition={{ delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -8 }}
-      className="group relative glass-opulent rounded-3xl border border-gold/10 transition-all duration-500 hover:border-gold/30 h-full flex flex-col overflow-hidden"
+      className="group relative glass-opulent rounded-3xl border border-gold/10 transition-all duration-500 hover:border-gold/30 h-full flex flex-col overflow-visible"
     >
       {/* Background Texture matching Skills */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('/marble-texture.png')] bg-cover grayscale" />
